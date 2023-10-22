@@ -78,6 +78,40 @@ public class BST {
         display(node.right , "Right child of "+node.val+":");
     }
 
+      // Traversal  Method
+    public void preOrder(){
+        preOrder(root);
+    }
+    private void preOrder(Node node){
+        if(node==null){
+            return;
+        }
+        System.out.print(node.value+" ");
+        preOrder(node.left);
+        preOrder(node.right);
+    }
+    public void inOrder(){
+        preOrder(root);
+    }
+    private void inOrder(Node node){
+        if(node==null){
+            return;
+        }
+        inOrder(node.left);
+        System.out.print(node.value+" ");
+        inOrder(node.right);
+    }
+
+    private void postOrder(Node node){
+        if(node==null){
+            return;
+        }
+        postOrder(node.left);
+        postOrder(node.right);
+        System.out.print(node.value+" ");
+    }
+
+
     public static void main(String[] args) {
 
         BST tree = new BST();
