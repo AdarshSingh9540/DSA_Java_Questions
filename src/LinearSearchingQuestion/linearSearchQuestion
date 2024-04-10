@@ -1,0 +1,47 @@
+import java.util.* ;
+
+class Main{
+  public static void main(String[] args){
+  // int[] arr = {1,2,3,4,5,6,7,8,9,10};
+  //   int target = 7;
+   //  int count =0;
+   //    for(int i=0;i<arr.length;i++){
+   //   if(arr[i]%2==0){
+   //     count++;
+   //   }
+   // }
+   //  System.out.println(count);
+  //   int ans = search(arr,target);
+  //    System.out.println(ans);
+  // }
+
+  // public static int search(int[] arr,int target){
+  //   for(int i=0;i<arr.length;i++){
+  //     if(arr[i]==target){
+  //       return i;
+  //     }
+    
+  //   }
+  //   return -1;
+
+
+    // New Concept
+
+    String str = "Adarsh";
+    char target = 'l';
+
+   System.out.println(search(str,target));
+    
+    
+  }
+
+  static boolean search(String str,char target){
+    for(int i=0;i<str.length();i++){
+      if(str.charAt(i)==target){
+        return true;
+      }
+    }
+    return false;
+  }
+  
+}
